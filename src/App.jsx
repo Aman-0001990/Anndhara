@@ -64,7 +64,7 @@ function App() {
             <div className="flex items-center">
               <span className="text-xl font-bold gradient-text">Aman Rohilla</span>
             </div>
-            <div className="hidden md:flex items-center space-x-8">
+            <div className=" md:flex items-center space-x-8">
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition">
                 About
               </a>
@@ -84,7 +84,18 @@ function App() {
                 className="text-gray-500 hover:text-gray-900"
                 aria-label="Toggle menu"
               >
-                <i data-feather="menu"></i>
+                {/* Inline SVG hamburger to ensure visibility without external icon libs */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
               </button>
             </div>
           </div>
@@ -220,6 +231,7 @@ function App() {
                   <p className="text-gray-600 ml-12">
                     Savitri Shiksha Sadan Sr. Secondary School
                   </p>
+                  <p className="text-gray-500 text-sm ml-12">81.4%</p>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <div className="flex items-center mb-2">
@@ -231,6 +243,7 @@ function App() {
                   <p className="text-gray-600 ml-12">
                     Savitri Shiksha Sadan Sr. Secondary School
                   </p>
+                  <p className="text-gray-500 text-sm ml-12">84%</p>
                 </div>
               </div>
             </div>
@@ -265,12 +278,17 @@ function App() {
                   <span className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
                     React
                   </span>
+                 
                   <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">
-                    Node.js
+                  MongoDB
                   </span>
-                  <span className="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">
-                    MongoDB
+                  <span className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+                  Node.js
                   </span>
+                  <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">
+                  Express.js
+                  </span>
+                 
                 </div>
                 <a
                   href="https://anndhara.netlify.app/"
@@ -300,16 +318,22 @@ function App() {
                   An integrated waste management system with citizen, worker, and municipal
                   interfaces.
                 </p>
+              
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
-                    MERN Stack
+                    React
                   </span>
-                  <span className="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">
-                    Spring Boot
+                 
+                  <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">
+                  MongoDB
                   </span>
-                  <span className="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">
-                    Java
+                  <span className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+                  Node.js
                   </span>
+                  <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">
+                  Express.js
+                  </span>
+                 
                 </div>
                 <a
                   href="https://swachhata-setu-1.netlify.app/"
@@ -317,7 +341,7 @@ function App() {
                   className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
                   rel="noreferrer"
                 >
-                  View Project <i data-feather="arrow-right" className="ml-2 w-4 h-4"></i>
+                  View Project <i data-feather="arrow-right" className="ml-2 w-2 h-4"></i>
                 </a>
               </div>
             </div>
@@ -350,6 +374,7 @@ function App() {
               <div className="bg-yellow-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <i data-feather="terminal" className="text-yellow-600 w-8 h-8"></i>
               </div>
+              <h3 className="font-semibold mb-2">Java</h3>
               <h3 className="font-semibold mb-2">C++</h3>
               <p className="text-gray-600 text-sm">Algorithmic problem solving</p>
             </div>
@@ -391,7 +416,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-500 p-3 rounded-full mr-4">
-                    <i data-feather="linkedin" className="text-white"></i>
+                    <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn" className="w-5 h-5" />
                   </div>
                   <a
                     href="https://www.linkedin.com/in/aman-rohilla-737520324/"
@@ -404,7 +429,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <div className="bg-gray-800 p-3 rounded-full mr-4">
-                    <i data-feather="github" className="text-white"></i>
+                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" className="w-5 h-5" />
                   </div>
                   <a
                     href="https://github.com/Aman-0001990"
@@ -417,7 +442,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <div className="bg-yellow-500 p-3 rounded-full mr-4">
-                    <i data-feather="code" className="text-white"></i>
+                    <img src="https://cdn.simpleicons.org/leetcode/ffffff" alt="LeetCode" className="w-5 h-5" />
                   </div>
                   <a
                     href="https://leetcode.com/u/vAjRvzncRN/"
@@ -498,26 +523,13 @@ function App() {
               <p className="text-gray-400 mt-2">MERN Stack Developer & Problem Solver</p>
             </div>
             <div className="flex space-x-6">
-              <a
-                href="https://www.linkedin.com/in/aman-rohilla-737520324/"
-                target="_blank"
-                className="text-gray-400 hover:text-white transition"
-                rel="noreferrer"
-              >
-                <i data-feather="linkedin"></i>
+              <a href="https://www.linkedin.com/in/aman-rohilla-737520324/" target="_blank" className="text-gray-400 hover:text-white transition" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn" className="w-5 h-5" />
               </a>
-              <a
-                href="https://github.com/Aman-0001990"
-                target="_blank"
-                className="text-gray-400 hover:text-white transition"
-                rel="noreferrer"
-              >
-                <i data-feather="github"></i>
+              <a href="https://github.com/Aman-0001990" target="_blank" className="text-gray-400 hover:text-white transition" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" className="w-5 h-5" />
               </a>
-              <a
-                href="mailto:amansatnarayan@gmail.com"
-                className="text-gray-400 hover:text-white transition"
-              >
+              <a href="mailto:amansatnarayan@gmail.com" className="text-gray-400 hover:text-white transition">
                 <i data-feather="mail"></i>
               </a>
             </div>
@@ -530,6 +542,13 @@ function App() {
 
       {/* Inline styles for gradients/hover */}
       <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
+        /* Ensure anchored sections are not hidden behind the sticky navbar */
+        #about, #projects, #skills, #contact {
+          scroll-margin-top: 5rem; /* ~80px navbar height */
+        }
         .gradient-text {
           background: linear-gradient(90deg, #3b82f6, #8b5cf6);
           -webkit-background-clip: text;
